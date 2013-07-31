@@ -1,0 +1,13 @@
+.container{
+  text-align: center;
+}
+
+#question {
+  display:none;
+}
+
+.chart rect {
+  stroke: white;
+  fill: red;
+}
+

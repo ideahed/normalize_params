@@ -1,0 +1,16 @@
+<h2><%= @survey.name%></h2>
+
+<ul id='take_survey'>
+  <form action="/vote" method="post">
+    <% @survey.questions.each do |question| %>
+          <li><b>Question: </b><span style="color:#3366CC"><%= question.content %></li>
+      <% question.choices.each do |choice| %>
+    <p>
+      <input type="radio" name="<%= question.id%>[]choice[]<%= choice.id %>" value="<%= choice.id %>"><%=choice.content%></input>
+    </p>
+    <% end %>
+    <% end %>
+    <input type="submit" class='btn btn-success' value="Submit"></input>
+  </form>
+</ul>
+
