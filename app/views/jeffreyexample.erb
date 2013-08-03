@@ -1,0 +1,21 @@
+<div id="jeffreyexample">
+  <form id='jeffreyexample' action ="/jeffreyexample" method="post">
+    <br><br>
+    <input type="text" name='survey[name]' placeholder='survey name'><br><br>
+    <div class='survey_questions'>
+      <div>
+        <input type="text" name="survey[questions][][content]" placeholder="question 1"><br>
+        <input type="text" name="survey[questions][][choices][][content]" placeholder="q1 choice 1">
+        <input type="text" name="survey[questions][][choices][][content]" placeholder="q1 choice 2">
+        <input type="text" name="survey[questions][][choices][][content]" placeholder="q1 choice 3">
+      </div>
+      <div>
+        <input type="text" name="survey[questions][][content]" placeholder="question 2"><br>
+        <input type="text" name="survey[questions][][choices][][content]" placeholder="q2 choice 1">
+        <input type="text" name="survey[questions][][choices][][content]" placeholder="q2 choice 2">
+        <input type="text" name="survey[questions][][choices][][content]" placeholder="q2 choice 3">
+      </div>
+    </div>
+    <input id='form_button' type="submit" class='btn btn-success' value="Create Survey">
+  </form>
+</div>

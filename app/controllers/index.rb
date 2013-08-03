@@ -12,6 +12,14 @@ get '/' do
   end
 end
 
+get '/jeffreyexample' do
+  erb :jeffreyexample
+end
+
+post '/jeffreyexample' do
+  params.to_json
+end
+
 get '/surveys/:id' do
   @survey = Survey.find(params[:id])
 
